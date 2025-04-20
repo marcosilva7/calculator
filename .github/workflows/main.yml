@@ -15,7 +15,7 @@ jobs:
           command: npx cypress run --browser chrome
 
       - name: Prints de execução de testes
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-screenshots-chrome
@@ -23,7 +23,7 @@ jobs:
           retention-days: 1
 
       - name: Videos da execução de testes
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-videos-chrome
